@@ -12,8 +12,8 @@ const BlogList = (props) => {
   },[])
   const fetchProducts = async () =>{
 try {
-  const apiUrl = process.env.REACT_APP_BE_URL
-  const getProducts = await fetch(`${apiUrl}/products`)
+  
+  const getProducts = await fetch("https://epic-products.herokuapp.com/products")
   const res = await getProducts.json()
   console.log(res)
   setProducts(res)
