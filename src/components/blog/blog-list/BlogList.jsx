@@ -44,9 +44,9 @@ try {
        return      <Card>
           
        <Card.Body className="text-dark">
-         <Card.Title>{current.name}</Card.Title>
+         <Card.Title>{current.title}</Card.Title>
          <Card.Text>
-           {current.name} - {current.name}
+           {current.year} - {current.type}
          </Card.Text>
        </Card.Body>
      </Card>
